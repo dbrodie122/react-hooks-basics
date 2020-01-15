@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
-import WordGame from './word-game/WordGame';
-import InventoryGame from './inventory-game/InventoryGame';
-import NumberGame from './number-game/NumberGame';
+import WordGameApp from './word-game/WordGameApp';
+import InventoryGameApp from './inventory-game/InventoryGameApp';
+import NumberGameApp from './number-game/NumberGameApp';
 
 export default function App() {
   return (
@@ -23,13 +23,13 @@ export default function App() {
 
         <Switch>
           <Route path='/word'>
-            <WordGame />
+            <WordGameApp />
           </Route>
           <Route path='/inventory'>
-            <InventoryGame />
+            <InventoryGameApp />
           </Route>
           <Route path='/'>
-            <NumberGame />
+            <NumberGameApp />
           </Route>
         </Switch>
       </div>
