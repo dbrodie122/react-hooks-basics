@@ -24,7 +24,7 @@ export default function InventoryGameApp() {
   };
 
   return (
-    <div>
+    <div className='container'>
       <h1>The Inventory Game</h1>
       <Stats products={products} />
       <Products products={products} updateStock={updateStock} />
